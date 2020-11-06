@@ -47,7 +47,7 @@ public class SolaceStandaloneMonitor extends ABaseMonitor {
             Integer timeout    = Helper.getIntOrDefault(server, TIMEOUT, Sempv1Connector.DEFAULT_TIMEOUT);
             ServerConfigs serverConfigs = new ServerConfigs(server);
 
-            logger.info("(nram) Adding task to poll [Server:{}, Mgmt URL:{}, Admin User:{}]",
+            logger.info("(DBG) Adding task to poll [Server:{}, Mgmt URL:{}, Admin User:{}]",
                     displayName, mgmtUrl, adminUser);
 
             // Validate the required server fields
