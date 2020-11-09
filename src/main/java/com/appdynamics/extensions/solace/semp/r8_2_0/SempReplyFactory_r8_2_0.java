@@ -235,7 +235,7 @@ public class SempReplyFactory_r8_2_0 implements SempReplyFactory<RpcReply> {
             result.put(Metrics.Vpn.TotalClientDataMessagesReceived, stats.getClientDataMessagesReceived());
             result.put(Metrics.Vpn.TotalClientDataMessagesSent, stats.getClientDataMessagesSent());
             // nram
-            result.put(Metrics.Vpn.TotalUniqueSubscriptions, "1234"); //stats.getTotalUniqueSubscriptions());
+            result.put(Metrics.Vpn.TotalUniqueSubscriptions, "820"); //stats.getTotalUniqueSubscriptions());
 
 
             if (!serverConfigs.getExcludeDiscardMetrics()) {
