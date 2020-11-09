@@ -62,7 +62,7 @@ public class Sempv1Connector implements SempConnector {
                     total.append(inputLine);
                 }
                 in.close();
-                logger.debug("SEMP POST DATA: {}", total.toString()); // DBG
+                logger.trace("SEMP RESP XML: {}", total.toString()); // DBG
                 return total.toString();
 
             } else {
