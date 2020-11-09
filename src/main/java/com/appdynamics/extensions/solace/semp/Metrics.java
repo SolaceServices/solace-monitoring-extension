@@ -110,6 +110,9 @@ public final class Metrics {
         public final static String CurrentEgressByteRatePerSecond = "CurrentEgressByteRatePerSecond";
         public final static String TotalClientDataMessagesReceived = "TotalClientDataMessagesReceived";
         public final static String TotalClientDataMessagesSent = "TotalClientDataMessagesSent";
+        // nram
+        public final static String TotalUniqueSubscriptions = "TotalUniqueSubscriptions";
+
         // Ingress discards
         public final static String TotalIngressDiscards = "Discards|TotalIngressDiscards";
         public final static String NoSubscriptionMatch = "Discards|Ingress|NoSubscriptionMatch";
@@ -131,6 +134,7 @@ public final class Metrics {
         public final static String EgressMessagePromotionCongestion = "Discards|Egress|EgressMessagePromotionCongestion";
         public final static String EgressMessageSpoolCongestion = "Discards|Egress|EgressMessageSpoolCongestion";
         public final static String MsgSpoolEgressDiscards = "Discards|Egress|MsgSpoolEgressDiscards";
+        // nram
     }
 
     public class Queue {
