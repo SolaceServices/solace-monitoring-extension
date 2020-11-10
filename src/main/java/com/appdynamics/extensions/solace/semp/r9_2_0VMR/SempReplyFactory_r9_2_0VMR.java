@@ -234,6 +234,9 @@ public class SempReplyFactory_r9_2_0VMR implements SempReplyFactory<RpcReply> {
                     calcPercentage(vpn.getConnectionsServiceSmf(),vpn.getMaxConnectionsServiceSmf()));
             result.put(Metrics.Vpn.TotalClientDataMessagesReceived, stats.getClientDataMessagesReceived());
             result.put(Metrics.Vpn.TotalClientDataMessagesSent, stats.getClientDataMessagesSent());
+            // nram
+            result.put(Metrics.Vpn.TotalUniqueSubscriptions, "921"); //stats.getTotalUniqueSubscriptions());
+
 
             if (!serverConfigs.getExcludeDiscardMetrics()) {
                 result.put(Metrics.Vpn.TotalIngressDiscards, stats.getIngressDiscards().getTotalIngressDiscards());
